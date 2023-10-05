@@ -1,0 +1,28 @@
+import java.util.Scanner
+
+object Act1 {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        val scanner = Scanner(System.`in`)
+        println("*************")
+        println("Makan Pop Mie")
+        println("*************")
+        print("Mau makan pop mie(y/n)? ")
+        val pilihan = scanner.next()[0]
+
+        if (pilihan == 'y' || pilihan == 'Y') {
+            println("1. Jalan ke garasi")
+            println("2. Ambil Kunci motor")
+            println("3. Nyalakan Motor")
+            println("4. Berjalan ke warung")
+            println("5. Membeli Pop Mie")
+            println("6. Bilang Ke kasir Sekalian diseduh")
+            println("7. Bayar Pop Mie")
+            println("--------------------------------")
+
+            println("Pop Mie Siap Dimakan")
+        } else {
+            println("Yaudah Cari Makan Sendiri")
+        }
+    }
+}
